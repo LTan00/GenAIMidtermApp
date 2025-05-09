@@ -7,6 +7,7 @@ import numpy as np
 import tempfile
 import zipfile
 import os 
+import openai
 
 with st.sidebar:
     uploaded_model = st.file_uploader("Upload Fine-tuned Embeddings (ZIP)", type="zip")
