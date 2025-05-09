@@ -33,11 +33,11 @@ with st.sidebar:
 
 # Open AI Key
 import openai
-# openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 
-from langchain_openai import OpenAI
-llm = OpenAI(openai_api_key=st.secrets["OPENAI_API_KEY"])
+# from langchain_openai import OpenAI
+# llm = OpenAI(openai_api_key=st.secrets["OPENAI_API_KEY"])
 
 from langchain_openai import ChatOpenAI
 
