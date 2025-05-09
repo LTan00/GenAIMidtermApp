@@ -1,4 +1,7 @@
 import streamlit as st
+
+st.write(st.secrets)
+
 st.set_page_config(page_title="RAG Chatbot", layout="wide")
 import pandas as pd
 import numpy as np
