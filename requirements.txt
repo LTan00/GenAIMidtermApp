@@ -4,6 +4,7 @@ langchain
 langchain-openai
 langchain-core
 langchain-text-splitters
+langchain-community
 faiss-cpu
 sentence-transformers
 transformers
