@@ -10,7 +10,8 @@ import os
 
 with st.sidebar:
     uploaded_model = st.file_uploader("Upload Fine-tuned Embeddings (ZIP)", type="zip")
-    
+    openai_api_key = st.text_input("Enter your OpenAI API Key", type="password")
+
     if uploaded_model:
         # Create persistent temp dir
         temp_dir = tempfile.mkdtemp()
@@ -32,8 +33,15 @@ with st.sidebar:
             st.stop()
 
 # Open AI Key
-import openai
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+if openai_api_key:
+    import openai
+    openai.api_key = openai_api_key
+else:
+    st.error("Please enter your OpenAI API Key to proceed.")
+
+# Open AI Key
+# import openai
+## openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 from langchain_openai import ChatOpenAI
 
