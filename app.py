@@ -34,7 +34,7 @@ with st.sidebar:
 # Open AI Key
 import openai
 [openai]
-OPEN_API_KEY = os.environ["OPENAI_API_KEY"] = "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"
+OPEN_API_KEY = "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"
 # os.environ["OPENAI_API_KEY"] = "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"
 from langchain_openai import ChatOpenAI
 
