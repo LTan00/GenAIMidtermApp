@@ -1,0 +1,10 @@
+streamlit
+pandas
+langchain
+langchain-openai
+langchain-core
+langchain-text-splitters
+faiss-cpu
+sentence-transformers
+transformers
+torch
